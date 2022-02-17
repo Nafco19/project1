@@ -1,0 +1,82 @@
+
+
+body {
+    font-family: Arial, 'Times New Roman', Times, serif;
+}
+
+/* style the header */
+.header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns /boxes that floats next to each other:*/
+
+
+/* Style the list inside the menu*/
+nav ui {
+ list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  text-decoration: none;
+}
+li{
+    float: left;
+   
+    
+
+}
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #111;
+  }
+
+article {
+
+    float: right;
+    padding: 20px;
+    width: 70%;
+    background-color: rgb(50, 209, 188);
+    height: auto;
+}
+
+/*Clear Floats after the colums*/
+section::after {
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+
+    margin-top: 100px;
+    background-color: rgb(78, 78, 78);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/*Responsive layoot -makes the two columns /boxes stack on top*/
+@media (max-width: 600px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
